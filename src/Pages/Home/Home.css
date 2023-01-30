@@ -125,7 +125,7 @@
     width: 190px;
     height: 40vh;
     margin: 0 auto;
-    background-image: url("../Images/bottle.png");
+    background-image: url("../../Images/bottle.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center top;
@@ -148,7 +148,7 @@
     top: -300px;
 
 
-    background-image: url("../Images/bottle-cap.png");
+    background-image: url("../../Images/bottle-cap.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center top;

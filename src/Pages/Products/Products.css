@@ -1,0 +1,44 @@
+.bottles {
+    position: relative;
+    height: 764px;
+    width: 100%;
+
+    background: linear-gradient(180deg, rgba(28, 91, 79, 0.2) 0%, rgba(28, 142, 128, 0.2) 100%), radial-gradient(81.25% 325% at 14.27% 29.03%, #565859 9.84%, rgba(17, 24, 30, 0.98) 65.12%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.bottle-1 {
+    background-image: url('../../Images/bottle-1.png');
+    height: 100%;
+    width: 25vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -200px;
+    bottom: -400px;
+    transform: rotate(30deg);
+    transition: bottom, left, 2s;
+}
+.bottle-2 {
+    position: absolute;
+    right: -100px;
+    top: -400px;
+    height: auto;
+    width: 200px;
+    transform: rotate(30deg);
+    transition: bottom, left, 2s;
+}
+.bottle-3 {
+    position: absolute;
+    left: 00px;
+    bottom: -400px;
+    transform: rotate(30deg);
+    transition: bottom, left, 2s;
+}
+.bottle-4 {
+    position: absolute;
+    left: 100px;
+    bottom: -400px;
+    transform: rotate(30deg);
+    transition: bottom, left, 2s;
+}
+
