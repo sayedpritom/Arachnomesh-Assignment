@@ -1,44 +1,106 @@
+.products {
+    margin-top: 200px;
+}
+
 .bottles {
     position: relative;
     height: 764px;
     width: 100%;
 
-    background: linear-gradient(180deg, rgba(28, 91, 79, 0.2) 0%, rgba(28, 142, 128, 0.2) 100%), radial-gradient(81.25% 325% at 14.27% 29.03%, #565859 9.84%, rgba(17, 24, 30, 0.98) 65.12%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: linear-gradient(180deg, rgba(28, 91, 79, 0.2) 0%, rgba(28, 142, 128, 0.2) 100%), radial-gradient(81.25% 325% at 14.27% 29.03%, #565859 9.84%, rgba(17, 24, 30, 0.98) 65.12%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
 }
 
 .bottle-1 {
-    background-image: url('../../Images/bottle-1.png');
+    width: 100vw;
     height: 100%;
-    width: 25vw;
-    background-size: contain;
-    background-repeat: no-repeat;
     position: absolute;
-    left: -200px;
-    bottom: -400px;
-    transform: rotate(30deg);
-    transition: bottom, left, 2s;
+    overflow: hidden;
+    top: 0%;
+    right: 0;
 }
+
 .bottle-2 {
+    width: 100vw;
+    height: 100%;
     position: absolute;
-    right: -100px;
-    top: -400px;
-    height: auto;
-    width: 200px;
-    transform: rotate(30deg);
-    transition: bottom, left, 2s;
+    overflow: hidden;
+    top: -10%;
+    right: 0;
 }
+
 .bottle-3 {
+    width: 100vw;
+    height: 100%;
     position: absolute;
-    left: 00px;
-    bottom: -400px;
-    transform: rotate(30deg);
-    transition: bottom, left, 2s;
+    overflow: hidden;
+    bottom: -30%;
+    right: 0;
 }
+
 .bottle-4 {
+    width: 100vw;
+    height: 100%;
     position: absolute;
-    left: 100px;
-    bottom: -400px;
+    overflow: hidden;
+    top: -8%;
+    right: 0;
+}
+
+.bottle-1>img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: -20%;
+    top: 70%;
+    transform: rotate(30deg);
+    transition: left, top, 2s;
+}
+
+.bottle-2>img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 55%;
+    top: -90%;
+    transform: rotate(30deg);
+    transition: left, top, 2s;
+}
+
+.bottle-3>img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 40%;
+    top: 70%;
+    transform: rotate(30deg);
+    transition: left, top, 2s;
+}
+
+.bottle-4>img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 20%;
+    top: -550%;
     transform: rotate(30deg);
     transition: bottom, left, 2s;
 }
 
+.products-title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 116px;
+    text-align: center;
+    color: #FFFFFF;
+
+    position: absolute;
+    z-index: 100;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+
+    transition: all, 1s;
+}

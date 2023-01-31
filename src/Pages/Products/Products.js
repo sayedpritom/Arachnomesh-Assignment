@@ -10,37 +10,49 @@ import bottle4 from '../../Images/bottle-4.png'
 
 const Products = () => {
     const { ref, entry } = useInView({});
-      console.log(entry);
+    console.log(entry);
 
-      let bottleOneStyle, bottleTwoStyle, bottleThreeStyle, bottleFourStyle;
+    let bottleOneStyle, bottleTwoStyle, bottleThreeStyle, bottleFourStyle, productsTitlesStyle;
 
-      if(entry?.isIntersecting) {
+    if (entry?.isIntersecting) {
         bottleOneStyle = {
-            "left": "50px",
-            "bottom": "-40px"
-        }
-        bottleTwoStyle = {
-            "left": "450px",
+            "left": "0%",
             "top": "0"
         }
+        bottleTwoStyle = {
+            "left": "30%",
+            "top": "0"
+
+        }
         bottleThreeStyle = {
-            "left": "850px",
-            "bottom": "-40px"
+            "left": "50%",
+            "top": "0"
         }
         bottleFourStyle = {
-            "left": "1050px",
-            "bottom": "-40px"
+            "left": "85%",
+            "top": "-5%"
         }
-      }
+        productsTitlesStyle = {
+            "top": "50%"
+        }
+    }
 
     return (
         <div ref={ref} className='products'>
-            <h1>Bottles</h1>
             <div className='bottles'>
-                <div style={bottleOneStyle} className='bottle-1'></div>
-                <img style={bottleTwoStyle} className='bottle-2' src={bottle2} alt="" />
-                <img style={bottleThreeStyle} className='bottle-3' src={bottle3} alt="" />
-                <img style={bottleFourStyle} className='bottle-4' src={bottle4} alt="" />
+                <h1 style={productsTitlesStyle} className='products-title'>A smart <br />way to sip</h1>
+                <div className='bottle-1'>
+                    <img style={bottleOneStyle} src={bottle1} alt="" />
+                </div>
+                <div className='bottle-2'>
+                    <img style={bottleTwoStyle} src={bottle2} alt="" />
+                </div>
+                <div className='bottle-3'>
+                    <img style={bottleThreeStyle} src={bottle3} alt="" />
+                </div>
+                <div className='bottle-4'>
+                    <img style={bottleFourStyle} src={bottle4} alt="" />
+                </div>
             </div>
         </div>
     );
