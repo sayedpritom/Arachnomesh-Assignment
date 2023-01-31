@@ -26,7 +26,7 @@ const Products = () => {
         }
         bottleThreeStyle = {
             "left": "50%",
-            "top": "0"
+            "top": "0%"
         }
         bottleFourStyle = {
             "left": "85%",
