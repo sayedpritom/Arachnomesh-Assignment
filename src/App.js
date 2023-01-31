@@ -1,7 +1,7 @@
 import './App.css';
-import Home from './Pages/Home/Home';
-import Products from './Pages/Products/Products';
-import Work from './Pages/Work/Work';
+import Home from './Components/Home/Home';
+import Products from './Components/Products/Products';
+import Work from './Components/Work/Work';
 
 function App() {
   return (

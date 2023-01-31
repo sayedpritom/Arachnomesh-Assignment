@@ -6,11 +6,11 @@ import ocean2 from '../../Images/ocean-2.png'
 
 
 const Work = () => {
-    const [visisble, setVisible] = useState(true);
+    const [visible, setVisible] = useState(true);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setVisible((visisble) => setVisible(!visisble))
+            setVisible((visible) => setVisible(!visible))
         }, 500);
         return () => clearInterval(interval)
     }, [])
@@ -19,7 +19,7 @@ const Work = () => {
         <div className='our-works'>
             <div>
                 <div className='works-gallery'>
-                    <h1 className='our-work-heading'>Our Work {visisble && <span className='underscore'></span>}</h1>
+                    <h1 className='our-work-heading'>Our Work {visible && <span className='underscore'></span>}</h1>
                     <div className='works'>
                         <div className='work work1'>
                             <div>

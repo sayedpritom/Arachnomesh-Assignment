@@ -1,5 +1,4 @@
 import React from 'react';
-import { useRef, useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 import './Products.css';
